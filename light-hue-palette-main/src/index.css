@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LeadFlow - Modern Lead Management System Design System
+   Light, accessible colors with excellent contrast ratios
+   All colors are HSL for better theming
+*/
+
+@layer base {
+  :root {
+    /* Light theme - Sophisticated rose & coral palette */
+    --background: 340 35% 97%;
+    --foreground: 345 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 345 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 345 25% 12%;
+
+    /* Vibrant rose primary with depth */
+    --primary: 340 75% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 340 70% 68%;
+    --primary-lighter: 340 65% 88%;
+
+    /* Warm coral secondary */
+    --secondary: 25 85% 88%;
+    --secondary-foreground: 345 35% 18%;
+
+    --muted: 340 25% 92%;
+    --muted-foreground: 340 15% 42%;
+
+    /* Rich peach accent */
+    --accent: 20 90% 85%;
+    --accent-foreground: 340 75% 45%;
+
+    /* Enhanced status colors */
+    --success: 140 65% 50%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 140 50% 90%;
+
+    --warning: 45 95% 55%;
+    --warning-foreground: 0 0% 100%;
+    --warning-light: 45 85% 88%;
+
+    --destructive: 355 75% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --destructive-light: 355 65% 90%;
+
+    /* Refined borders and inputs */
+    --border: 340 20% 85%;
+    --input: 340 20% 85%;
+    --ring: 340 75% 58%;
+
+    /* Dynamic interactive states */
+    --hover: 340 35% 90%;
+    --active: 340 40% 84%;
+
+    /* Elegant sidebar */
+    --sidebar-background: 340 45% 95%;
+    --sidebar-foreground: 345 30% 20%;
+    --sidebar-primary: 340 75% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 340 30% 88%;
+    --sidebar-accent-foreground: 345 30% 20%;
+    --sidebar-border: 340 25% 82%;
+    --sidebar-ring: 340 75% 58%;
+
+    /* Rich, dynamic gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(340 75% 58%) 0%, hsl(25 85% 65%) 50%, hsl(340 70% 68%) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(340 35% 97%) 0%, hsl(25 45% 94%) 50%, hsl(340 25% 92%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(340 25% 96%) 50%, hsl(25 35% 95%) 100%);
+
+    /* Sophisticated shadows with color */
+    --shadow-subtle: 0 2px 8px 0 hsl(340 45% 65% / 0.12);
+    --shadow-medium: 0 8px 24px 0 hsl(340 55% 55% / 0.18);
+    --shadow-large: 0 16px 40px 0 hsl(340 65% 45% / 0.25);
+
+    /* Typography */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    --radius: 0.5rem;
+
+    /* Animation */
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 345 25% 6%;
+    --foreground: 340 25% 92%;
+
+    --card: 345 20% 8%;
+    --card-foreground: 340 25% 92%;
+
+    --popover: 345 20% 8%;
+    --popover-foreground: 340 25% 92%;
+
+    --primary: 340 70% 65%;
+    --primary-foreground: 345 25% 6%;
+    --primary-light: 340 65% 75%;
+    --primary-lighter: 340 45% 22%;
+
+    --secondary: 25 45% 18%;
+    --secondary-foreground: 340 25% 85%;
+
+    --muted: 340 20% 12%;
+    --muted-foreground: 340 15% 62%;
+
+    --accent: 20 55% 18%;
+    --accent-foreground: 340 70% 70%;
+
+    --success: 140 60% 55%;
+    --success-foreground: 345 25% 6%;
+    --success-light: 140 35% 15%;
+
+    --warning: 45 90% 60%;
+    --warning-foreground: 345 25% 6%;
+    --warning-light: 45 55% 15%;
+
+    --destructive: 355 70% 65%;
+    --destructive-foreground: 345 25% 6%;
+    --destructive-light: 355 45% 15%;
+
+    --border: 340 20% 18%;
+    --input: 340 20% 18%;
+    --ring: 340 70% 65%;
+
+    --hover: 340 20% 12%;
+    --active: 340 25% 15%;
+
+    --sidebar-background: 345 30% 4%;
+    --sidebar-foreground: 340 25% 85%;
+    --sidebar-primary: 340 70% 65%;
+    --sidebar-primary-foreground: 345 25% 6%;
+    --sidebar-accent: 340 20% 12%;
+    --sidebar-accent-foreground: 340 25% 85%;
+    --sidebar-border: 340 20% 15%;
+    --sidebar-ring: 340 70% 65%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(340 70% 65%) 0%, hsl(25 60% 55%) 50%, hsl(340 65% 75%) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(345 25% 6%) 0%, hsl(25 30% 8%) 50%, hsl(340 20% 12%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(345 20% 8%) 0%, hsl(340 20% 10%) 50%, hsl(25 25% 9%) 100%);
+
+    --shadow-subtle: 0 2px 8px 0 hsl(340 50% 25% / 0.4);
+    --shadow-medium: 0 8px 24px 0 hsl(340 60% 35% / 0.5);
+    --shadow-large: 0 16px 40px 0 hsl(340 70% 45% / 0.6);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
